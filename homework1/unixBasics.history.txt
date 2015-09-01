@@ -1,0 +1,192 @@
+    1  ls
+    2  pwd
+    3  ls
+    4  mkdir Anworkshop
+    5  ls
+    6  cd Anworkshop
+    7  ls
+    8  wget
+    9  wget http://www.cals.arizona.edu/~anling/workshop/t*
+   10  ls
+   11  wget http://www.cals.arizona.edu/~anling/workshop/template.csh
+   12  wget http://www.cals.arizona.edu/~anling/workshop/tset.fna
+   13  wget http://www.cals.arizona.edu/~anling/workshop/testset.fna
+   14  ls
+   15  wget http://www.cals.arizona.edu/~anling/software/taec_linux.zip
+   16  ls
+   17  unzip taec_linux.aip
+   18  unzip taec_linux.zip
+   19  ls
+   20  cd taec_rev
+   21  login as: dailu
+   22  Using keyboard-interactive authentication.
+   23  Password:
+   24  Access denied
+   25  Using keyboard-interactive authentication.
+   26  Password:
+   27  ls
+   28  cd ..
+   29  ls
+   30  module load R
+   31  R
+   32  cd
+   33  ls
+   34  cd Anworkshop/taec_rev
+   35  ls
+   36  module load R
+   37  R
+   38  wget http://www.cals.arizona.edu/~anling/software/RAIDA_1.0.tar.gz
+   39  la
+   40  ls
+   41  mv RAIDA_1.0.tar.gz ~/Anworkshop
+   42  ls
+   43  cd Anworkshop
+   44  pwd
+   45  cd ~/Anworkshop
+   46  ls
+   47  gunzip RAIDA_1.0.tar.gz
+   48  ls
+   49  module load R
+   50  R
+   51  ls
+   52  gzip RAIDA_1.0.tar
+   53  ls
+   54  module load R
+   55  R
+   56  id
+   57  ls
+   58  git clone https://github.com/DailuChen/Test.git
+   59  ls
+   60  cd
+   61  cd Test
+   62  ls
+   63  cat README.md 
+   64  w
+   65  man ls
+   66  cd ~
+   67  new
+   68  mkdir dailu
+   69  cd dailu
+   70  mkdir foo
+   71  cd foo
+   72  ls -la foo/
+   73  w
+   74  man wc
+   75  date
+   76  date; ecto hellow; date
+   77  date; echo hellow; date
+   78  echo $HOME
+   79  cp /tmp/cuffdiff.txt
+   80  ssh-keygen
+   81  cd ~/.ssh
+   82  cat id_rsa.pub
+   83  ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAsbm0lWP14cswV6myUAtMUbmBVXST4wqq/xN/4NwOmjfa3QC66uB0rDMPJEENMshYqDfU2aUeWg7czhLmnV1QygjPRiyczTOQs2wHjLDzWzP3hZv0+iVxDzWLDY+Naso7i2DYHhk/trSOkVRPkmxVCeFNaNwTJPYElAIaaHwkGlYqxyR4JZz4dQRFcoWuRdu3TYQCBGdJbd+eFbZvjddeLBCbi8vNG/u0kHjwsu5xar53avh76SUaLjgTKEzNWe67OZ6OxnfLjhhyG2tDQNGKhntrwrNAxEhL9p+SdggHuXOFIiIp1aEMDrtKh4aCmioQfavNZddrhjSskBoBhgGARQ== dailu@service1
+   84  ~/.ssh/config
+   85  cd ~
+   86  ssh -T git@github.com
+   87  mkdir ABE487
+   88  cd ABE487
+   89  touch README.md
+   90  git int
+   91  git init
+   92  git add README.md
+   93  git commit -m "first commit"
+   94  git config --global user.name "Your Name"
+   95  --global user.name "Your Name"
+   96  git config --global user.name "Dailu Chen"
+   97  git config --global user.name "dailu@email.arizona.edu"
+   98  git remote add origin --global user.name "Your Name"
+   99  git remote add origin https://github.com/DailuChen/ABE487.git
+  100  git remote -v
+  101  git push origin master
+  102  git push -u origin master
+  103  git add README.md
+  104  git commit -m "first commit"
+  105  git remote add origin https://github.com/DailuChen/ABE487.git
+  106  git push -u origin master
+  107  ls
+  108  git commit -m "first commit"
+  109  git remote add origin https://github.com/DailuChen/ABE487.git
+  110  git push -u origin master
+  111  cd ..
+  112  rm -rf ABE487
+  113  ls
+  114  mkdir ABE487
+  115  ls
+  116  cd ABE487
+  117  ls
+  118  touch test
+  119  ls
+  120  git init
+  121  touch test.md
+  122  rm test
+  123  ls
+  124  git add test.md
+  125  git commit -m 'First commit'
+  126  git remote add origin https://github.com/DailuChen/ABE487.git
+  127  git remote -v
+  128  git push origin master
+  129  cd ~/.ssh
+  130  ls
+  131  nano authorized_keys
+  132  nano ~/.ssh/id_rsa.pub
+  133  nano authorized_keys
+  134  ~
+  135  cd ~
+  136  git clone git@github.com:DailuChen/abe487.git
+  137  cd abe487
+  138  ls
+  139  mkdir homework1
+  140  git init
+  141  git add .
+  142  git commit "hw1"
+  143  git commit -m "homework1""
+  144  git commit -m "homework1"
+  145  git remote add origin git@github.com:DailuChen/abe487.git
+  146  git push -u origin master
+  147  ls
+  148  cd homework1/
+  149  ls
+  150  touch test.md
+  151  cd ..
+  152  git add .
+  153  git commit -m "homework1"
+  154  git remote add origin git@github.com:DailuChen/abe487.git
+  155  git push -u origin master
+  156  ..
+  157  cd ..
+  158  ls
+  159  wc -l
+  160  w | wc -l
+  161  w man
+  162  ls
+  163  ls -l | wc -l
+  164  history
+  165  nano sequences.fasta
+  166  ftp ftp.imicrobe.us
+  167  ls
+  168  mv mouse.fa ../abe487/homework1
+  169  mv mouse.fa ../abe487/
+  170  cp  mouse.fa ../abe487
+  171  ls
+  172  cd abe487
+  173  ls
+  174  cd ..
+  175  cp mouse.fa abe487/
+  176  ls
+  177  ls abe487/
+  178  mkdir abe487/homework1/fasta
+  179  ls abe487/homework1/fasta
+  180  ls abe487/homework1
+  181  cp mouse.fa homework1
+  182  ls abe487/homework1
+  183  cp mouse.fa abe487/homework1
+  184  ls abe487/homework1
+  185  mv mouse.fa abe487/homework1/fasta
+  186  ls abe487/homework1/fasta
+  187  rm abe487/mouse.fa
+  188  ls abe487
+  189  rm  abe487/homework1/mouse.fa
+  190  ls  abe487/homework1
+  191  man rm
+  192  history > unixBasics.history.txt
