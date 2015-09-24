@@ -1,0 +1,28 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+
+my $x = $ARGV[0];
+my $y = $ARGV[1];
+
+my $error = "err.txt";
+my $d = "out.txt";
+
+open (STDERR, '>', $error) or die "Can't write to error: $!\n";
+open (STDOUT, '>',  $d)or die "Can't write to outfile: $!\n";
+
+unless (defined $x and defined $y){
+    print STDERR "Two numbers are required.\n";
+}
+ 
+if ($x < 0 or $y <0){
+    print STDERR "The numbers have to be positive.\n";
+} 
+elsif ($y == 0){
+    print STDERR "The divisor cannot be zero.\n";
+}
+else {
+    my $d = $x/$y;
+    print STDOUT $d, "\n";
+}

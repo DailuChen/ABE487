@@ -1,0 +1,17 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+
+
+while (my $line = <>) {
+    my $Nobody = index($line,'Nobody');
+    my $somebody = index($line,'somebody');
+    if ($nobody_index >= 0) {
+	warn("Nobody is here: $Nobody_index.\n");
+    }
+    if ($somebody_index >= 0) {
+	warn("somebody is here: $somebody_index.\n");
+    }
+    chomp $line;
+}   
