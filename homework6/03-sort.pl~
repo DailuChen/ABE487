@@ -1,0 +1,10 @@
+!/usr/bin/env perl
+
+use strict;
+use warnings;
+use autodie;
+
+@ARGV or die 'No input';
+
+my @default_sort = sort (@ARGV);
+print "default sort = ", join (',', @default_sort), "\n";
