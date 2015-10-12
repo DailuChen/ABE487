@@ -4,13 +4,14 @@ use strict;
 use warnings;
 use autodie;
 
-@ARGV or die 'Please provide a list of numbers.';
+@ARGV or die "Please provide a list of numbers.\n";
 
 my @evens = ();
 
-foreach my $n(@ARGV) {
-    if($n % 2 == 0){
-	push (@evens,$n);
+for my $n (@ARGV) {
+    if ($n % 2 == 0) {
+        push @evens, $n;
     }
 }
-    print "evens = ", join (',',@evens), "\n";
+
+print "evens = ", join (',', @evens), "\n";
