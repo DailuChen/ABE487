@@ -1,0 +1,113 @@
+not ok 1 - 01-mod.pl
+#   Failed test '01-mod.pl'
+#   at /usr/local/lib/perl5/site_perl/5.22.0/Test/Script/Run.pm line 258.
+#          got: '1'
+#     expected: '0'
+# Different in line: 1: got (Please provide a list of numbers. at /Users/kyclark/work/students/dailuchen/homework6/01-mod.pl line 7.), expect (Please provide a list of numbers.)
+not ok 2 - 01-mod.pl 1 2 3 4 5 6 7
+#   Failed test '01-mod.pl 1 2 3 4 5 6 7'
+#   at /usr/local/lib/perl5/site_perl/5.22.0/Test/Script/Run.pm line 258.
+#          got: '1'
+#     expected: '0'
+# Different in line: 1: got (evens = 2,4,6), expect (evens = 2, 4, 6)
+ok 3 - 01-mod.pl 1 3 5 7
+not ok 4 - 02-mod-sort-sum.pl
+#   Failed test '02-mod-sort-sum.pl'
+#   at /usr/local/lib/perl5/site_perl/5.22.0/Test/Script/Run.pm line 258.
+#          got: '1'
+#     expected: '0'
+# Different in line: 1: got (Please provide a list of numbers. at /Users/kyclark/work/students/dailuchen/homework6/02-mod-sort-sum.pl line 7.), expect (Please provide a list of numbers.)
+ok 5 - 02-mod-sort-sum.pl 1 2 3 4 5 6 7
+not ok 6 - 03-sort.pl
+#   Failed test '03-sort.pl'
+#   at /usr/local/lib/perl5/site_perl/5.22.0/Test/Script/Run.pm line 258.
+#          got: '1'
+#     expected: '0'
+# Different in line: 1: got (Please provide a list of numbers. at /Users/kyclark/work/students/dailuchen/homework6/03-sort.pl line 7.), expect (Please provide a list of numbers.)
+not ok 7 - 03-sort.pl 98 2 36 74 27 33
+#   Failed test '03-sort.pl 98 2 36 74 27 33'
+#   at /usr/local/lib/perl5/site_perl/5.22.0/Test/Script/Run.pm line 258.
+#          got: '3'
+#     expected: '0'
+# Different in line: 1: got (default sort = 2,27,33,36,74,98), expect (default sort = 2, 27, 33, 36, 74, 98)
+# 
+# 2: got (numerical sort = 2,27,33,36,74,98), expect (numerical sort = 2, 27, 33, 36, 74, 98)
+# 
+# 3: got (reverse numerical sort = 98,74,36,33,27,2), expect (reverse numerical sort = 98, 74, 36, 33, 27, 2)
+not ok 8 - 04-array-ops.pl
+#   Failed test '04-array-ops.pl'
+#   at /usr/local/lib/perl5/site_perl/5.22.0/Test/Script/Run.pm line 258.
+#          got: '5'
+#     expected: '0'
+# Different in line: 1: got (array = 101,2,15,22,95,33,2,27,72,15,52,), expect (array = 101, 2, 15, 22, 95, 33, 2, 27, 72, 15, 52)
+# 
+# 2: got (popped = 52, array = 101,2,15,22,95,33,2,27,72,15,), expect (popped = 52, array = 101, 2, 15, 22, 95, 33, 2, 27, 72, 15)
+# 
+# 3: got (shifted = 101, array = 2,15,22,95,33,2,27,72,15,), expect (shifted = 101, array = 2, 15, 22, 95, 33, 2, 27, 72, 15)
+# 
+# 4: got (after push, array = 2,15,22,95,33,2,27,72,15,12,), expect (after push, array = 2, 15, 22, 95, 33, 2, 27, 72, 15, 12)
+# 
+# 5: got (after unshift, array = 4,2,15,22,95,33,2,27,72,15,12,), expect (after unshift, array = 4, 2, 15, 22, 95, 33, 2, 27, 72, 15, 12)
+not ok 9 - 05-string-sort.pl
+#   Failed test '05-string-sort.pl'
+#   at /usr/local/lib/perl5/site_perl/5.22.0/Test/Script/Run.pm line 258.
+#          got: '1'
+#     expected: '0'
+# Different in line: 1: got (Please provide a list of sequences. at /Users/kyclark/work/students/dailuchen/homework6/05-string-sort.pl line 7.), expect (Please provide a list of sequences.)
+not ok 10 - 05-string-sort.pl ATGCCCGGCCCGGC GCGTGCTAGCAATACGATAAACCGG ATATATATCGAT ATGGGCCC
+#   Failed test '05-string-sort.pl ATGCCCGGCCCGGC GCGTGCTAGCAATACGATAAACCGG ATATATATCGAT ATGGGCCC'
+#   at /usr/local/lib/perl5/site_perl/5.22.0/Test/Script/Run.pm line 258.
+#          got: '2'
+#     expected: '0'
+# Different in line: 1: got (sorted = ATATATATCGAT,ATGCCCGGCCCGGC,ATGGGCCC,GCGTGCTAGCAATACGATAAACCGG), expect (sorted = ATATATATCGAT, ATGCCCGGCCCGGC, ATGGGCCC, GCGTGCTAGCAATACGATAAACCGG)
+# 
+# 2: got (reverse = GCGTGCTAGCAATACGATAAACCGG,ATGGGCCC,ATGCCCGGCCCGGC,ATATATATCGAT), expect (reverse = GCGTGCTAGCAATACGATAAACCGG, ATGGGCCC, ATGCCCGGCCCGGC, ATATATATCGAT)
+not ok 11 - 06-string-sort-len.pl
+#   Failed test '06-string-sort-len.pl'
+#   at /usr/local/lib/perl5/site_perl/5.22.0/Test/Script/Run.pm line 258.
+#          got: '1'
+#     expected: '0'
+# Different in line: 1: got (Please provide a list of sequences. at /Users/kyclark/work/students/dailuchen/homework6/06-string-sort-len.pl line 7.), expect (Please provide a list of sequences.)
+not ok 12 - 06-string-sort-len.pl AACT TACCTAG TTACAG
+#   Failed test '06-string-sort-len.pl AACT TACCTAG TTACAG'
+#   at /usr/local/lib/perl5/site_perl/5.22.0/Test/Script/Run.pm line 258.
+#          got: '2'
+#     expected: '0'
+# Different in line: 1: got (sorted = AACT,TTACAG,TACCTAG), expect (sorted = AACT, TTACAG, TACCTAG)
+# 
+# 2: got (reverse = TACCTAG,TTACAG,AACT), expect (reverse = TACCTAG, TTACAG, AACT)
+not ok 13 - 07-gc.pl
+#   Failed test '07-gc.pl'
+#   at /usr/local/lib/perl5/site_perl/5.22.0/Test/Script/Run.pm line 258.
+#          got: '1'
+#     expected: '0'
+# Different in line: 1: got (Please provide a sequence. at /Users/kyclark/work/students/dailuchen/homework6/07-gc.pl line 7.), expect (Please provide a sequence.)
+not ok 14 - 07-gc.pl ATGGGCCC atgcccggcccggc
+#   Failed test '07-gc.pl ATGGGCCC atgcccggcccggc'
+#   at /usr/local/lib/perl5/site_perl/5.22.0/Test/Script/Run.pm line 258.
+#          got: '10'
+#     expected: '0'
+# Different in line: 1: got (Length: 8), expect (-------)
+# 
+# 2: got (#GC :6), expect (Seq   : ATGGGCCC)
+# 
+# 3: got (%GC :75), expect (Length: 8)
+# 
+# got nothing, expected: #GC   : 6
+# got nothing, expected: %GC   : 75
+# got nothing, expected: -------
+# got nothing, expected: Seq   : atgcccggcccggc
+# got nothing, expected: Length: 14
+# got nothing, expected: #GC   : 12
+# got nothing, expected: %GC   : 85.7142857142857
+Skipping 08-snps.pl (does not exist)
+Skipping 08-snps.pl (does not exist)
+Skipping 08-snps.pl (does not exist)
+Skipping 08-snps.pl (does not exist)
+Skipping 08-snps.pl (does not exist)
+Skipping 09-extra-credit.pl (does not exist)
+Skipping 09-extra-credit.pl (does not exist)
+1..14
+The plan was already output at /usr/local/lib/perl5/5.22.0/Test/Builder.pm line 2510.
+1..14
+# Looks like you failed 12 tests of 14.

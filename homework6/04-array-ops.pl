@@ -3,20 +3,21 @@
 use strict;
 use warnings;
 use autodie;
+use feature 'say';
 
 my @array = (101, 2, 15, 22, 95, 33, 2, 27, 72, 15, 52);
-print "array = ", join (',', @array, "\n");
+say "array = ", join (', ', @array);
 
 my $popped = pop @array;
-print "popped = ", $popped, ', ', "array = ", join (',', @array, "\n");
+say "popped = ", $popped, ', ', "array = ", join (', ', @array);
 
 my $shifted = shift @array;
-print "shifted = ", $shifted, ', ', "array = ", join (',', @array, "\n");
+say "shifted = ", $shifted, ', ', "array = ", join (', ', @array);
 
 push (@array, 12);
-print "after push, array = ", join (',', @array,"\n");
+say "after push, array = ", join (', ', @array);
 
 unshift (@array, 4);
-print "after unshift, array = ", join (',', @array,"\n");
+say "after unshift, array = ", join (', ', @array);
 
 
