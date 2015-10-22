@@ -1,0 +1,20 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+use autodie;
+
+my $file = shift || 'Perl_III.nobody.txt';
+open my $fh, '<', $file;
+ 
+while (my $line = <>) {
+    my $Nobody = index($line,'Nobody');
+    my $somebody = index($line,'somebody');
+    if ($Nobody >= 0) {
+	warn("Nobody is here: $Nobody\n");
+    }
+    if ($somebody >= 0) {
+	warn("somebody is here: $somebody\n");
+    }
+    
+}   

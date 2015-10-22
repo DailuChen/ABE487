@@ -3,6 +3,19 @@
 use strict;
 use warnings;
 
+open my $fh, '<', 'Perl_III.fasta.txt';
+
+while (my $line =<$fh>){
+    chomp $line;
+    if (substr($line,0,1) eq '>'){
+	say "$line (revcomp)";
+    }
+    else {
+	$line = reverse $line;
+	$line =~ tr/ATCG
+
+
+
 my $infasta = 'Perl_III.fasta.txt';
 my $outfasta = 'Perl_III.fasta.out';
 

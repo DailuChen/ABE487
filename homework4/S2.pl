@@ -2,16 +2,17 @@
 
 use strict;
 use warnings;
+use autodie;
+use feature 'say';
 
-my $infile = 'Perl_III.nobody.txt';
-my $outfile = 'uppercase.out';
+my $in_file  = shift || 'Perl_III.nobody.txt';
+my $out_file = shift || 'uppercase.out';
 
-open (STDIN, "<", $infile) or die "Error reading infile: $!\n";
-open (STDOUT, ">", $outfile) or die "Error writing outfile: $!\n";
+open my $in_fh, '<', $in_file;
+open my $out_fh, '>', $out_file;
                                                                               
-while (my $text = <STDIN>) {                        
+while (my $line = <$in_fh>) {                        
    
-    my $uctext = uc $text;
-    chomp $uctext;
-    print STDOUT $uctext, "\n";
+    chomp $line;
+    say uc $line;
 }

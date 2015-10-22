@@ -6,7 +6,7 @@ use warnings;
 
 use autodie;
 
-my $file = 'Perl_III.fastq.txt';
+my $file = shift || 'Perl_III.fastq.txt';
 open my $fh, '<', $file;
 my $num_line=0;
 my $num_char=0;

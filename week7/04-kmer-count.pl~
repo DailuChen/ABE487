@@ -5,18 +5,15 @@ use warnings;
 use autodie;
 use feature 'say';
 
-my $sequence = shift || die "Please provide a sequence.\n";
-
-if (-e $sequence) {
-    open my $fh, '<', $sequence;
-    $sequence = join '', <$fh>;
-}
-
-unless ($sequence){ 
-    die "Zero-length sequence.\n";
-}
-
+my $sequence = shift || die "Please provide a sequence.";
 my $k_size = shift || 3;
+
+$sequence || die "Zero-length sequence.";
+
+
+open my $fh, '<', $sequence;
+$sequence = join '', <$fh>;
+
 if (length ($sequence) < $k_size){
     die "Cannot get any $k_size mers from a sequence of length ", length ($sequence), "\n";
 }
@@ -47,7 +44,7 @@ if ($n_single < $uni_k){
 	if ($uni_k >1) {
 	    $i++;
 	    last if $i >= 10;
-		say $kmer, ': ', $uni_k;
+	    say $kmer, ': ', $uni_k;
 	}
     }
 }
