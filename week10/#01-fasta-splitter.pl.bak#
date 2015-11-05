@@ -1,0 +1,22 @@
+#!/usr/bin/perl 
+
+use strict;
+use warnings;
+use autodie;
+use Bio::SeqIO;
+use File::Spec::Functions;
+use File::Basename;
+use File::Path;
+use Cwd;
+
+@ARGV or die "Please provide a fasta file.\n";
+my $file = shift;
+my $n_seq = shift || 500;
+
+for my $file (@ARGV) {
+    my $in = Bio::SeqIO->new(
+    -file   => $file,
+    -format => "fasta" 
+    );
+    
+
