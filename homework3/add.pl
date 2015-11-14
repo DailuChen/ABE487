@@ -1,16 +1,18 @@
 #!/usr/bin/perl
+
 use strict;
 use warnings;
+use feature 'say';
 
-my $x= $ARGV[0];
-my $y= $ARGV[1];
-unless (defined $x and defined $y){
-die "Please provide two numbers.\n";
+my ($x, $y) = @ARGV;
+
+unless (defined $x && defined $y) {
+    die "Please provide two numbers.\n";
 }
-if ($x>=0 and $y>=0){
-my $total=$x+$y;
-print "$total\n";
+
+if ($x >= 0 && $y >= 0) {
+    say $x + $y;
 }
 else {
-print "Please provide two positive numbers.\n"
+    print "Please provide two positive numbers.\n";
 }
